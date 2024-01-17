@@ -2,7 +2,14 @@ import requests
 import csv
 from bs4 import BeautifulSoup as bs
 import csv
-
+a="""            ___                __ _         
+            / _ \              /_ | |        
+  _ __ ___ | | | |_      ___ __ | | | ____ _ 
+ | '_ ` _ \| | | \ \ /\ / / '_ \| | |/ / _` |
+ | | | | | | |_| |\ V  V /| | | | |   < (_| |
+ |_| |_| |_|\___/  \_/\_/ |_| |_|_|_|\_\__,_|
+"""
+print(a)
 URL='https://www.flipkart.com/search?q=phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off'
 r = requests.get(URL)
 
@@ -28,3 +35,4 @@ for i in range(len(tlist)):
     res.append(concatenated_sublist)
 for i in res:
     print(i)
+                 
